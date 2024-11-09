@@ -29,13 +29,20 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
     setCurrentImage(index);
   };
 
+  // Safeguard: check if currentImage is within bounds
+  const currentProject = props.projects[currentImage];
+
+  if (!currentProject) {
+    return null; // If there's no valid project to show, render nothing
+  }
+
   return (
     <section className="overflow-hidden px-6 py-32 sm:px-14 md:px-20">
       <div className="relative mx-auto max-w-7xl">
         <div className="relative right-0 top-0 hidden lg:block">
           <AnimatePresence>
             <motion.div
-              key={props.projects[currentImage].title}
+              key={currentProject.title} // Ensure we have a valid project title
               initial={{ x: "100%", opacity: 0 }}
               animate={{
                 x: "55%",
@@ -52,16 +59,16 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
               className="absolute right-0 top-0 -z-50"
             >
               <Image
-                src={images[currentImage].LIGHT}
+                src={currentProject.image.LIGHT || "/path/to/default-image.jpg"} // Fallback image if LIGHT doesn't exist
                 unoptimized
                 width={100}
                 height={100}
                 className="h-auto w-1/2 rounded-lg border border-zinc-300 shadow-lg dark:hidden dark:border-accent/50"
                 alt={`project ${currentImage}`}
               />
-              {images[currentImage].DARK !== undefined && (
+              {currentProject.image.DARK && (
                 <Image
-                  src={images[currentImage].DARK!}
+                  src={currentProject.image.DARK}
                   unoptimized
                   width={100}
                   height={100}
