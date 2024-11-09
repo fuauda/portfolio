@@ -12,7 +12,7 @@ export interface ExperienceShowcaseListProps {
 }
 
 export default function ExperienceShowcaseList(
-  props: ExperienceShowcaseListProps
+  props: ExperienceShowcaseListProps,
 ) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
