@@ -37,7 +37,6 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "A user authentication system built with Node.js that allows users to securely register, log in, and manage their sessions. It uses JWT for token-based authentication and provides a seamless, secure experience for managing user access.",
     sourceCodeHref: "#",
-    
   },
   {
     name: "A real state app",
@@ -50,7 +49,6 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "A real estate website that showcases property listings with key details like bedrooms, bathrooms, and size. It features an intuitive design and easy navigation, allowing users to quickly find and explore available properties. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
     sourceCodeHref: "#",
-    
   },
 
   {
@@ -65,8 +63,6 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     sourceCodeHref: "https://github.com/BUMBAIYA/amitchauhan-v2",
     liveWebsiteHref: siteMetadata.siteUrl,
   },
-
-
 
   {
     name: "Stock Managment system",

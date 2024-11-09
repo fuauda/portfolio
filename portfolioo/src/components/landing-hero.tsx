@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-
-
 import FadeUp from "@/animation/fade-up";
 
 export default function LandingHero() {
@@ -26,35 +24,30 @@ export default function LandingHero() {
   }, []);
 
   return (
-    <section
-      
-      className="pointer-events-none flex max-h-[1000px] min-h-[calc(100vh-200px)] items-center px-6 sm:px-14 md:h-[calc(100vh-200px)] md:min-h-max md:px-20"
-    >
+    <section className="pointer-events-none flex max-h-[1000px] min-h-[calc(100vh-200px)] items-center px-6 sm:px-14 md:h-[calc(100vh-200px)] md:min-h-max md:px-20">
       <div className="w-full">
         <div className="mx-auto max-w-7xl">
-          
-            <FadeUp key="title-main" duration={0.6}>
-              <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
-                Fuad Tesfaye
-              </h1>
-              <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Software Developer
-              </span>
-            </FadeUp>
-            <article key="description" >
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I am a software developer specializing in building
-                high-performance, user-focused web applications. Skilled in{" "}
-                <span className="font-semibold text-accent">ReactJS</span>,{" "}
-                <span className="font-semibold text-accent">NextJS</span>,{" "}
-                <span className="font-semibold text-accent">TailwindCSS</span>, and
-                an expert in{" "}
-                <span className="font-semibold text-accent">JavaScript</span>,{" "}
-                <span className="font-semibold text-accent">HTML</span> and{" "}
-                <span className="font-semibold text-accent">CSS</span>
-              </div>
-            </article>
-          
+          <FadeUp key="title-main" duration={0.6}>
+            <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
+              Fuad Tesfaye
+            </h1>
+            <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
+              Software Developer
+            </span>
+          </FadeUp>
+          <article key="description">
+            <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
+              I am a software developer specializing in building
+              high-performance, user-focused web applications. Skilled in{" "}
+              <span className="font-semibold text-accent">ReactJS</span>,{" "}
+              <span className="font-semibold text-accent">NextJS</span>,{" "}
+              <span className="font-semibold text-accent">TailwindCSS</span>,
+              and an expert in{" "}
+              <span className="font-semibold text-accent">JavaScript</span>,{" "}
+              <span className="font-semibold text-accent">HTML</span> and{" "}
+              <span className="font-semibold text-accent">CSS</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>

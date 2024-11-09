@@ -12,11 +12,10 @@ export default function CursorTrailCanvas(props: CursorTrailCanvasProps) {
   const refCanvas = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const { cleanUp,  } = cursorTrail({
+    const { cleanUp } = cursorTrail({
       ref: refCanvas,
       color: props.color,
     });
-  
 
     return () => {
       cleanUp();

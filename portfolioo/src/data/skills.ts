@@ -3,13 +3,8 @@ import {
   SiSocketdotio,
   SiPrisma,
   SiNextdotjs,
-  SiFlask,
 } from "react-icons/si";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/icons";
+
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
@@ -18,7 +13,6 @@ import CsssSvg from "@/public/icons/css.svg";
 
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
-
 
 // Libraries
 import ReactjsSvg from "@/public/icons/reactjs.svg";
@@ -33,7 +27,6 @@ import NodejsSvg from "@/public/icons/nodejs.svg";
 
 // Database and ORMS
 import MongoDBSvg from "@/public/icons/mongodb.svg";
-
 
 // Tools and Tech
 import GitSvg from "@/public/icons/git.svg";
@@ -60,7 +53,6 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Typescript",
         icon: TypescriptSvg,
       },
-
     ],
   },
   {
@@ -84,12 +76,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: TailwindcssSvg,
       },
 
-
       {
         name: "Vite",
         icon: ViteSvg,
       },
-
     ],
   },
   {
@@ -107,7 +97,6 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Socket.io",
         icon: SiSocketdotio,
       },
-
     ],
   },
   {
@@ -125,7 +114,6 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
     ],
   },
 
-
   {
     sectionName: "Tools and Technologies",
     skills: [
@@ -133,7 +121,7 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Git",
         icon: GitSvg,
       },
-    
+
       {
         name: "Postman",
         icon: PostmanSvg,

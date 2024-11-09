@@ -22,7 +22,7 @@ export default function ContactButton() {
     const btn = refSendBtn.current;
     const observer = new IntersectionObserver(
       observerCallback,
-      floatingMailButtonoptions,
+      floatingMailButtonoptions
     );
     if (btn) observer.observe(btn);
     return () => {

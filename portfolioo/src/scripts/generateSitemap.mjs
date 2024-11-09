@@ -5,7 +5,7 @@ import { siteMetadata } from "../data/siteMetaData.mjs";
 
 async function generateSitemap() {
   const prettierConfig = await prettier.resolveConfig(
-    "../../prettier.config.js",
+    "../../prettier.config.js"
   );
 
   const pages = await globby([
@@ -48,7 +48,7 @@ async function generateSitemap() {
   writeFileSync("public/robots.txt", robotsTxt);
 
   console.log(
-    "Successfully generated\n-> Sitemap at public/sitemap.xml\n-> Robots.txt at public/robots.txt",
+    "Successfully generated\n-> Sitemap at public/sitemap.xml\n-> Robots.txt at public/robots.txt"
   );
 }
 

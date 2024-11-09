@@ -1,7 +1,6 @@
 import { type ExperienceShowcaseListItemProps } from "@/components/experience/experience-showcase-list-item";
 
 export const EDUCATION: ExperienceShowcaseListItemProps[] = [
-
   {
     title: "Higher Secondary School",
     organisation: {
@@ -21,7 +20,6 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     },
     date: "2017-2018",
     location: "Mekdela, Ethiopia",
-    description:
-      "Learned good values,dedication and disciplne.",
+    description: "Learned good values,dedication and disciplne.",
   },
 ];
